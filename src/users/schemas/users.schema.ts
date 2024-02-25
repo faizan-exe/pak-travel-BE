@@ -1,5 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { Document} from 'mongoose';
 
 export type UserDocument = User & Document;
 
@@ -14,7 +14,7 @@ export class User {
   @Prop()
   email: string;
 
-  @Prop()
+  @Prop({type: Object})
   preferences: {
     budget: number;
     travel_type: string;

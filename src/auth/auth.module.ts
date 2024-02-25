@@ -8,6 +8,7 @@ import { UsersService } from "../users/users.service";
 import { MongooseModule } from "@nestjs/mongoose"
 import { UserSchema } from "../users/schemas/users.schema"
 import { LocalStrategy } from './local.auth';
+import { CommunityModule } from "src/community/community.module";
 
 
 @Module({
